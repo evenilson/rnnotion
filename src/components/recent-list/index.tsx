@@ -20,6 +20,9 @@ export default function RecentList({ data }: Props){
         data={data}
         keyExtractor={item => item.id}
         renderItem={({ item }) => <Recent data={item} />}
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        contentContainerStyle={s.content}
       />
     </View>
   )
